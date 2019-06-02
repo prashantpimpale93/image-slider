@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'image-slider';
-  images : any[] = ['Jack', 'Jill'];
+  images : any[] = ['/assets/1.jpg', '/assets/3.jpg', '/assets/4.jpg'];
 }

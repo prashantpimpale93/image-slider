@@ -1,4 +1,14 @@
 <p>
-  image-slider works!
+  Image-slider!
 </p>
-<mat-card>Simple card</mat-card>
+
+<mat-card class="mat-card">
+  <span (click)="prev()">
+    <i class="material-icons">
+        keyboard_arrow_left
+        </i>
+      </span>
+      {{i}}
+  <img [src]="slideImages[0]" class="img-class"/>
+  <span><i class="material-icons" (click)="next()">navigate_next</i></span>
+</mat-card>

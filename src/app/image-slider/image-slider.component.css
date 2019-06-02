@@ -1,0 +1,15 @@
+.img-class {
+    flex: 1;
+    height: 100%;
+}
+
+.mat-card{
+width: 300px;
+height: 300px;
+border: 2px solid blueviolet;
+justify-content: center;
+display: flex;
+flex-direction: row;
+overflow: hidden;
+}
+
