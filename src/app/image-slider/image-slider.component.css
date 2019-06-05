@@ -31,3 +31,7 @@
 #container {
     text-align: -webkit-center;
 }
+
+.pointer {
+    cursor: pointer;
+}

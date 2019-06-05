@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material';
+import { ZoomComponent } from '../zoom/zoom.component';
 
 @Component({
   selector: 'pmp-image-slider',
@@ -15,7 +17,7 @@ export class ImageSliderComponent implements OnInit {
 
   @Input() images: any;
 
-  constructor(private snackbar: MatSnackBar) {
+  constructor(private snackbar: MatSnackBar, private dialog : MatDialog ) {
   }
 
   ngOnInit() {
@@ -47,6 +49,14 @@ export class ImageSliderComponent implements OnInit {
   displayMessage(message: string, action?: string) {
     this.snackbar.open(message, action ? action : '', {
       duration: 500
+    });
+  }
+
+  onImageClick(imageUrl: string){
+    this.dialog.open(ZoomComponent, {
+      maxWidth: '600px',
+      maxHeight: '550px',
+      data : imageUrl
     });
   }
 }
