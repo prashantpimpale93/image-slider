@@ -5,15 +5,15 @@
 <div id="container">
   <mat-card class="mat-card">
     <mat-card-header>
-      <span (click)="prev()" class="prev">
-        <button mat-icon-button aria-label="Example icon-button with a heart icon">
+      <span (click)="prev()" class="prev" [matTooltipPosition]="toolTipPosition" matTooltip="Previous Image">
+        <button mat-icon-button>
           <i class="material-icons">
             keyboard_arrow_left
           </i>
         </button>
       </span>
-      <span (click)="next()" class="next">
-        <button mat-icon-button aria-label="Example icon-button with a heart icon">
+      <span (click)="next()" class="next" [matTooltipPosition]="toolTipPosition" matTooltip="Next Image">
+        <button mat-icon-button>
           <i class="material-icons">navigate_next</i>
         </button>
       </span>
