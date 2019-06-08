@@ -1,14 +1,25 @@
-<p>
-  Image-slider!
-</p>
+<div>
+  <h3>Image-slider!</h3>
+</div>
 
-<mat-card class="mat-card">
-  <span (click)="prev()">
-    <i class="material-icons">
-        keyboard_arrow_left
-        </i>
+<div id="container">
+  <mat-card class="mat-card">
+    <mat-card-header>
+      <span (click)="prev()" class="prev" [matTooltipPosition]="toolTipPosition" matTooltip="Previous Image">
+        <button mat-icon-button>
+          <i class="material-icons">
+            keyboard_arrow_left
+          </i>
+        </button>
       </span>
-      {{i}}
-  <img [src]="slideImages[0]" class="img-class"/>
-  <span><i class="material-icons" (click)="next()">navigate_next</i></span>
-</mat-card>
+      <span (click)="next()" class="next" [matTooltipPosition]="toolTipPosition" matTooltip="Next Image">
+        <button mat-icon-button>
+          <i class="material-icons">navigate_next</i>
+        </button>
+      </span>
+    </mat-card-header>
+    <div class="imgdiv pointer" (click)="onImageClick(slideImages[0])">
+      <img class="img-area" [src]="slideImages[0]" />
+    </div>
+  </mat-card>
+</div>

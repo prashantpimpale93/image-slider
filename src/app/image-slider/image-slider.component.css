@@ -1,15 +1,37 @@
-.img-class {
-    flex: 1;
-    height: 100%;
+.mat-card {
+    width: 403px;
+    height: 450px;
+    padding: 20px;
 }
 
-.mat-card{
-width: 300px;
-height: 300px;
-border: 2px solid blueviolet;
-justify-content: center;
-display: flex;
-flex-direction: row;
-overflow: hidden;
+.imgdiv {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
+.img-area {
+    width: 100%;
+    min-height: 100%;
+}
+
+.next {
+    float: right;
+}
+
+.prev {
+    float: left;
+}
+
+.mat-card-header {
+    display: unset !important;
+}
+
+#container {
+    text-align: -webkit-center;
+}
+
+.pointer {
+    cursor: pointer;
+}
