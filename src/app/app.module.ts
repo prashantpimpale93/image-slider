@@ -29,7 +29,7 @@ import { ImageSliderModule } from 'pmp-custom-image-slider';
     MatButtonModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
     ImageSliderModule
   ],
   providers: [],
