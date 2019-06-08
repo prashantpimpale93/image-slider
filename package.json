@@ -23,6 +23,7 @@
     "@angular/router": "~8.0.0",
     "angular-material": "^1.1.19",
     "hammerjs": "^2.0.8",
+    "pmp-custom-image-slider": "0.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
